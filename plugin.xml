@@ -8,6 +8,7 @@
   <js-module src="www/www.min.js" name="QRScanner">
     <clobbers target="QRScanner" />
   </js-module>
+  <!-- Android -->
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="QRScanner">
@@ -22,6 +23,7 @@
     <source-file src="src/android/QRScanner.java" target-dir="src/com/bitpay/cordova/qrscanner"/>
     <framework src="src/android/qrscanner.gradle" custom="true" type="gradleReference"/>
   </platform>
+  <!-- iOS -->
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
       <feature name="QRScanner">
@@ -44,6 +46,7 @@
       <runs />
     </js-module>
   </platform>
+  <!-- windows -->
   <platform name="windows">
     <config-file target="config.xml" parent="/*">
       <feature name="QRScanner">
